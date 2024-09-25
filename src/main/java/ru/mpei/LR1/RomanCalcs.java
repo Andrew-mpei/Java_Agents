@@ -34,11 +34,7 @@ public class RomanCalcs extends Calculations{
         Integer arabic1 = r.transInArabic(getNum1());
         Integer arabic2 = r.transInArabic(getNum2());
         Integer sum = arabic1 * arabic2;
-        if (sum <= 0){
-            System.out.println("Неположительный результат");
-        }else{
-            System.out.println(r.transInRoman(sum));
-        }
+        System.out.println(r.transInRoman(sum));
     }
 
     @Override
