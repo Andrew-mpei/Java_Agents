@@ -29,6 +29,9 @@ public class ArabicCalcs extends Calculations{
 
     @Override
     public void division() {
+        if (Double.valueOf(getNum2()) == 0.0){
+            throw new ArithmeticException();
+        }
         Integer ans = (int) Math.floor(Double.valueOf(getNum1()) / Double.valueOf(getNum2()));
         System.out.println(ans);
     }

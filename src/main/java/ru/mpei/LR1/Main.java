@@ -54,7 +54,7 @@ public class Main {
             }
 
         }else{
-            System.out.println("Неверный формат чисел, повторите ");
+            throw new NumberFormatException("Неверный формат чисел, повторите ");
         }
     }
 }
